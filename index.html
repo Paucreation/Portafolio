@@ -1,15 +1,8 @@
 <!DOCTYPE html>
-<html lang="e">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&family=Wendy+One&display=swap"
-      rel="stylesheet"
-    />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,21 +12,22 @@
 
     <link rel="stylesheet" href="./css/style.css" />
     <title>Portafolio - paucreation</title>
+    <meta name="format-detection" content="telephone=no" />
     <meta
       name="description"
       content="Hola, bienvenid@ a mi Portafolio Profesional, soy Paula Mendez, Diseñadora UX/UI"
     />
-    <link rel="canonical" href="https://paucreation.github/Portafolio/" />
+    <link rel="canonical" href="https://paucreation.github.io/Portafolio/" />
     <link
-      rel="favicon"
-      href="https://paucreation.github/PortafolioV1/assets/favicon.svg"
+      rel="icon"
+      href="./assets/favicon.svg"
     />
     <link
       rel="apple-touch-icon"
-      href="https://paucreation.github/PortafolioV1/assets/favicon.svg"
+      href="./assets/favicon.svg"
     />
     <meta name="theme-color" content="#DC7898" />
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="og:type" content="website" />
     <meta
       property="og:title"
@@ -41,14 +35,14 @@
       content="Portafolio CV - paucreation"
     />
     <meta
-      property="og:img"
-      name="twitter:image"
-      content="https://paucreation.github/Portafolio/assets/hero-img.jpg"
-    />
+       property="og:image"
+       name="twitter:image"
+       content="./assets/paula.jpg"
+     />
     <meta
       property="og:url"
       name="twitter:url"
-      content="https://paucreation.github/Portafolio/"
+      content="https://paucreation.github.io/Portafolio/"
     />
     <meta
       property="og:description"
@@ -57,12 +51,13 @@
     />
   </head>
   <body>
+    <a href="#acerca" class="skip-link">Saltar al contenido</a>
     <header class="header">
       <section class="container">
         <div class="logo">
           <a href="/index.html">Paula Mendez</a>
         </div>
-        <button class="menu-btn">
+        <button class="menu-btn" aria-label="Abrir menú">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -102,44 +97,24 @@
     <section id="acerca" class="home section">
       <div class="container">
         <article class="img">
-          <img class="img-home" src="./assets/paula.jpg" alt="Paula Mendez" />
+          <img class="img-home" src="./assets/paula.jpg" alt="Paula Mendez" width="320" height="320" />
         </article>
         <article>
           <aside class="text-center text-lg-left">
-            <h1>Hola! 👋🏻Soy Paula Mendez,</h1>
-            <h3>Diseñadora <i>UX/UI</i></h3>
+            <h1>Unity Developer | UX Designer</h1>
           </aside>
 
           <p>
-            A inicios del año 2024 participé en dos proyectos de manera remota
-            en dos proyectos <b>Red Nacional de Cuidados</b> y
-            <b>Job Seeker</b> de Chile, trabajé con personas de distintos países
-            de latinoamérica, algo muy enriquecedor. En ambos proyectos, diseñé
-            interfaces orientadas a roles de usuario final y administradores, y
-            apliqué el pensamiento de diseño, llevando insigths a bocetos a mano
-            y luego a prototipos interactivos de Figma.
+            Desarrollo jugabilidad, mecánicas e interfaces en C# para experiencias gamificadas, colaboro en proyectos como <i>freelance</i> y estoy más orientada al diseño, aunque también realizo <i>maquetación web</i>. Disfruto llevar a cabo la maquetación e interactividad de interfaces web, así como la optimización para el buen posicionamiento y el rendimiento de carga de sitios y aplicaciones web. Soy <i>Tecnóloga en Formulación de Proyectos</i> con <i>Especialización en Marketing Digital</i> y cuento con formación de Google en diseño UX.
           </p>
 
-          <p>
-            También colaboro en proyectos como <i>Freelance</i> Estoy más
-            orientada al Diseño, sin embargo también realizo
-            <i>Maquetación Web.</i>
+            <p>
+            Participé como diseñadora en proyectos internacionales: <b>Red Nacional de Cuidados</b> y
+            <b>Job Seeker</b> de Chile, en ellos trabajé con personas de distintos nacionalidades, creando interfaces orientadas a roles de usuario final y <i>backoffice</i>, aplicando buenas prácticas, pensamiento de diseño, metodologías ágiles, y flujos de trabajo para la obtención de insights en etapa de research, la definición de requisitos funcionales, la creación de sistemas de diseño y la presentación de prototipos interactivos.
           </p>
+          
 
-          <p>
-            Disfruto llevar a cabo la maquetación e interactividad de interfaces
-            web, así como la optimización, para el buen posicionamiento y el
-            rendimiento de carga de sitios y aplicaciones <i>web.</i>
-          </p>
-
-          <p>
-            Soy <i>Tecnológa en Formulación de Proyectos,</i> con
-            <i> Esp. en Marketing Digital</i>
-          </p>
-
-          <!-- <div class="text-center text-lg-left">
-                        <a class="btn" href="../../CV.pdf" target="_blank" rel="noopener">Contáctame</a>
-                    </div>-->
+          
         </article>
       </div>
     </section>
@@ -150,25 +125,28 @@
         <a
           href="https://www.behance.net/gallery/201459259/Desafio"
           target="_blank"
+          rel="noopener noreferrer"
           class="portfolio-card"
         >
-          <img src="./assets/JobSeeker.png" alt="Job Seeker" />
+          <img src="./assets/JobSeeker.png" alt="Job Seeker" width="600" height="400" loading="lazy" />
         </a>
 
         <a
           href="https://www.behance.net/gallery/201381411/Red-Nacional-de-Cuidados-Chile"
           target="_blank"
+          rel="noopener noreferrer"
           class="portfolio-card"
         >
-          <img src="./assets/RNC.png" alt="Red Nacional de Cuidados" />
+          <img src="./assets/RNC.png" alt="Red Nacional de Cuidados" width="600" height="400" loading="lazy" />
         </a>
 
         <a
           href="https://www.behance.net/gallery/197141935/RodAr"
           target="_blank"
+          rel="noopener noreferrer"
           class="portfolio-card"
         >
-          <img src="./assets/Rodar.png" alt="RodAR" />
+          <img src="./assets/Rodar.png" alt="RodAR" width="600" height="400" loading="lazy" />
         </a>
       </div>
     </section>
@@ -177,8 +155,8 @@
       <h2 class="section-title">Habilidades</h2>
       <div class="container container-skills">
         <div>
-          <div class="skills-text"><i>UX/UI Desing</i></div>
-          <div class="skills-text"><i>Information arquitecture</i></div>
+          <div class="skills-text"><i>UX/UI Design</i></div>
+          <div class="skills-text"><i>Information architecture</i></div>
           <div class="skills-text"><i>Design thinking</i></div>
         </div>
 
@@ -195,28 +173,37 @@
         <h2 class="section-title">Contacto</h2>
 
         <form class="contact-form text-center">
+          <label for="contact-name" class="sr-only">Nombre</label>
           <input
+            id="contact-name"
             type="text"
             name="name"
             placeholder="Ingresa tu nombre *"
             title="Nombre sólo acepta letras y espacios en blanco"
             pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+            inputmode="text"
             required
           />
 
+          <label for="contact-email" class="sr-only">Correo electrónico</label>
           <input
+            id="contact-email"
             type="email"
             placeholder="Ingresa tu correo *"
             title="Email incorrecto"
             pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+            inputmode="email"
             required
           />
 
+          <label for="contact-comments" class="sr-only">Comentarios</label>
           <textarea
+            id="contact-comments"
             name="comments"
             cols="50"
             rows="10"
             placeholder="Déjame tus comentarios"
+            inputmode="text"
           ></textarea>
 
           <div class="contact-form-loader text-center none">
@@ -297,7 +284,7 @@
             </svg>
             <h5>Social Media</h5>
             <small class="social-media">
-              <a href="https://behance.net/paucreation" target="_blank" rel="noopener">
+              <a href="https://behance.net/paucreation" target="_blank" rel="noopener" aria-label="Behance">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -312,25 +299,12 @@
                 </svg>
               </a>
 
-              <a href="htpps://instagram/paucreation" target="_blank" rel="noopener">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-instagram"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
-                  />
-                </svg>
-              </a>
 
               <a
                 href="https://linkedin.com/in/paulamr"
                 target="_blank"
                 rel="noopener"
+                aria-label="LinkedIn"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
